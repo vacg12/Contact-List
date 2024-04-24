@@ -1,0 +1,199 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color:#ccfbf1;
+  padding: 1rem
+}
+
+#list-container {
+  height: 100%;
+  width: 100%;
+  max-width: 50rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #99f6e4;
+    border-radius: 0.5rem;
+}
+#list {
+  overflow-x: hidden;
+  padding: 0;
+  padding-top: 1rem;
+  overflow-y: scroll;
+  border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+#list::-webkit-scrollbar {
+  width: 6px;
+}
+#list::-webkit-scrollbar-thumb {
+  background: linear-gradient(#2dd4bf, #0d9488) ;
+  border-radius: 100vw;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+#form-btn {
+  background: #2dd4bf;
+  width: 4rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+}
+.form-input-container {
+  color: #042f2e;
+  font-family: monospace;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.border-edit{
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+}
+
+.titulo {
+  font-size: 1.5rem;
+}
+#title {
+  color: #115e59;
+    font-family: monospace;
+}
+
+.edit-btn {
+  border-radius: 0.6rem;
+}
+
+.delete-btn {
+  border-radius: 0.6rem;
+}
+
+#input-name {
+    text-align: center;
+    border-radius: 0.2rem;
+}
+#input-number {
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+.info {
+  display: none;
+}
+
+.edit-icon, .delete-icon {
+  width: 1.2rem;
+  height: 1.5rem;
+}
+
+ul#list{
+  padding: 0;
+}
+
+.contact  {
+  list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    max-width: 25rem;
+    font-size: 14px;
+}
+
+.form-input {
+  outline: none
+}
+
+.form-input:focus {
+  outline: none
+}
+
+.correct, .correct:focus {
+  outline: 2px solid green;
+}
+
+.incorrect, .incorrect:focus {
+  outline: 2px solid red;
+}
+
+.show {
+  display: flex;
+}
+
+.border-edit {
+  outline: 2px solid rgb(55, 45, 184);
+} 
+
+@media (min-width: 1024px){
+ #input-name{
+  font-size: 1rem;
+ }
+ #input-number{
+  font-size: 1rem;
+ }
+ #form-btn{
+  font-size: 1rem;
+ }
+ .contact{
+  font-size: 16.5px;
+ }
+ .edit-icon, .delete-icon {
+  width: 1.5rem;
+  height: 1.7rem;
+ }
+}
+
+@media (min-width: 2560px){
+  #title{
+    font-size: 2.3rem;
+  }
+  #input-name{
+    font-size: 1.3rem;
+   }
+   #input-number{
+    font-size: 1.3rem;
+   }
+   #form-btn{
+    font-size: 1.3rem;
+   }
+   .contact{
+    font-size: 19px;
+   }
+   .edit-icon, .delete-icon {
+    width: 1.7rem;
+    height: 1.9rem;
+   }
+   .form-input-container{
+    font-size: 1.5rem;
+   }
+}
+
+
