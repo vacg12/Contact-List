@@ -22,6 +22,7 @@ body {
 #list-container {
   height: 100%;
   width: 100%;
+  min-width: 17rem;
   max-width: 50rem;
     padding: 0 1rem;
     display: flex;
