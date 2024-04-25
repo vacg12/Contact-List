@@ -67,11 +67,6 @@ body {
   color: #042f2e;
   font-family: monospace;
   font-size: 1.1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
 }
 
 .border-edit{
@@ -147,6 +142,8 @@ ul#list{
 
 .show {
   display: flex;
+  justify-content: center;
+    font-size: 0.8rem;
 }
 
 .border-edit {
