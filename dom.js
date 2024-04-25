@@ -94,6 +94,7 @@ form.addEventListener('submit', e => {
   form.reset();
   nameInput.classList.remove('correct');
   numberInput.classList.remove('correct');
+  formBtn.disabled = true;
   nameValidation = false;
   numberValidation = false;
 });
